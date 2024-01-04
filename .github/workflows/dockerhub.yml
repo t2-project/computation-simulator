@@ -31,7 +31,7 @@ jobs:
         java-version: '17'
         cache: 'maven'
     - name: verify
-      run: cd computation-simulator && ./mvnw clean install
+      run: cd computation-simulator && chmod +x mvnw && ./mvnw clean install
     - run: |
         echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
     - name: Build and push
