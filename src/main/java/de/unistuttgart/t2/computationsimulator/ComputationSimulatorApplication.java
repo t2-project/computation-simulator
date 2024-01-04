@@ -18,8 +18,8 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class ComputationSimulatorApplication {
 
-    @Value("${t2.computationSimulator.calculatePi.TotalPoints}")
-    int piCalculatorTotalPoints;
+    @Value("${t2.computationSimulator.pi.totalPoints}")
+    int piTotalPoints;
 
     public static void main(String[] args) {
         SpringApplication.run(ComputationSimulatorApplication.class, args);
@@ -27,7 +27,7 @@ public class ComputationSimulatorApplication {
 
     @Bean
     public ComputationSimulatorService getComputationSimulatorService() {
-        IComputeOperation<Double> piCalculator = new PiCalculator(piCalculatorTotalPoints);
+        IComputeOperation<Double> piCalculator = new PiCalculator(piTotalPoints);
         return new ComputationSimulatorService(piCalculator);
     }
 

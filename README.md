@@ -11,6 +11,6 @@ Refer to the [Documentation](https://t2-documentation.readthedocs.io/en/latest/m
 
 (`./src/main/resources/application.yml`)
 
-| property                                        | read from env var                                  | description                                                                                             |
-|-------------------------------------------------|----------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| t2.computationSimulator.calculatePi.TotalPoints | T2_COMPUTATION_SIMULATOR_CALCULATE_PI_TOTAL_POINTS | total points that should be calculated of PI. 100000000 requires around 5 sec, 1000000000 around ~1 min |
+| property                               | read from env var                                  | description                                                                                             |
+|----------------------------------------|----------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| t2.computationSimulator.pi.totalPoints | COMPUTATION_SIMULATOR_PI_TOTAL_POINTS | total points that should be calculated of PI. 100000000 requires around 5 sec, 1000000000 around ~1 min |

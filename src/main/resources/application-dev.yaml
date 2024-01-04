@@ -5,8 +5,8 @@ server:
 
 t2:
   computationSimulator:
-    calculatePi:
-      TotalPoints: 100000000 # 100000000 → ~5 sec; 1000000000 → ~1 min
+    pi:
+      totalPoints: 100000000 # 100000000 → ~5 sec; 1000000000 → ~1 min
 
 opentracing:
   jaeger:

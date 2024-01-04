@@ -9,10 +9,10 @@ import java.util.Random;
  */
 public class PiCalculator implements IComputeOperation<Double> {
 
-    private final int calculatePiTotalPoints;
+    private final int totalPoints;
 
-    public PiCalculator(int calculatePiTotalPoints) {
-        this.calculatePiTotalPoints = calculatePiTotalPoints;
+    public PiCalculator(int totalPoints) {
+        this.totalPoints = totalPoints;
     }
 
     @Override
@@ -28,7 +28,6 @@ public class PiCalculator implements IComputeOperation<Double> {
      */
     @Override
     public Double doCompute() {
-        int totalPoints = calculatePiTotalPoints;
         int insideCircle = 0;
 
         Random random = new Random();

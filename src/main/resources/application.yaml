@@ -5,8 +5,8 @@ info:
 
 t2:
   computationSimulator:
-    calculatePi:
-      TotalPoints: ${T2_COMPUTATION_SIMULATOR_CALCULATE_PI_TOTAL_POINTS:100000000} # 100000000 → ~5 sec; 1000000000 → ~1 min
+    pi:
+      totalPoints: ${COMPUTATION_SIMULATOR_PI_TOTAL_POINTS:100000000} # 100000000 → ~5 sec; 1000000000 → ~1 min
 management:
   endpoints:
     web:
