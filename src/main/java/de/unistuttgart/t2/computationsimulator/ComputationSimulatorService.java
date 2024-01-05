@@ -18,14 +18,15 @@ public class ComputationSimulatorService {
         this.computeOperation = computeOperation;
     }
 
-    void doCompute() {
+    public double doCompute() {
         LOG.info("Start compute operation '{}'.", computeOperation.getName());
         long startTime = System.currentTimeMillis();
 
         computeOperation.doCompute();
 
         long endTime = System.currentTimeMillis();
-        long elapsedTime = (endTime - startTime) / 1000;
-        LOG.info("Compute operation finished after {} seconds.", elapsedTime);
+        long elapsedTime = (endTime - startTime);
+        LOG.info("Compute operation finished after {} ms.", elapsedTime);
+        return elapsedTime;
     }
 }
