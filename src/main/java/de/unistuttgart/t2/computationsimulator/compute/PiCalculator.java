@@ -1,5 +1,8 @@
 package de.unistuttgart.t2.computationsimulator.compute;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Random;
 
 /**
@@ -11,8 +14,11 @@ public class PiCalculator implements IComputeOperation<Double> {
 
     private final int totalPoints;
 
+    private final Logger LOG = LoggerFactory.getLogger(getClass());
+
     public PiCalculator(int totalPoints) {
         this.totalPoints = totalPoints;
+        LOG.info("Initialized PiCalculator with totalPoints: {}", totalPoints);
     }
 
     @Override
