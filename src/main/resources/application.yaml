@@ -4,9 +4,10 @@ info:
     version: '@project.version@'
 
 t2:
-  computationSimulator:
+  computation-simulator:
     pi:
-      totalPoints: ${COMPUTATION_SIMULATOR_PI_TOTAL_POINTS:100000000} # 100000000 → ~5 sec; 1000000000 → ~1 min
+      totalPoints: ${T2_COMPUTATION_SIMULATOR_PI_TOTAL_POINTS:100000000} # 100000000 → ~5 sec; 1000000000 → ~1 min
+
 management:
   endpoints:
     web:

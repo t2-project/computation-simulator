@@ -18,7 +18,7 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class ComputationSimulatorApplication {
 
-    @Value("${t2.computationSimulator.pi.totalPoints}")
+    @Value("${t2.computation-simulator.pi.totalPoints}")
     int piTotalPoints;
 
     public static void main(String[] args) {
