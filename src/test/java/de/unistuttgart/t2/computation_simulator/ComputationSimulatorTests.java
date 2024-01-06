@@ -1,7 +1,7 @@
-package de.unistuttgart.t2.computationsimulator;
+package de.unistuttgart.t2.computation_simulator;
 
-import de.unistuttgart.t2.computationsimulator.compute.IComputeOperation;
-import de.unistuttgart.t2.computationsimulator.compute.PiCalculator;
+import de.unistuttgart.t2.computation_simulator.compute.IComputeOperation;
+import de.unistuttgart.t2.computation_simulator.compute.PiCalculator;
 import org.junit.jupiter.api.Test;
 import org.springframework.test.context.ActiveProfiles;
 

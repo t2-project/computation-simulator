@@ -1,4 +1,4 @@
-package de.unistuttgart.t2.computationsimulator;
+package de.unistuttgart.t2.computation_simulator;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

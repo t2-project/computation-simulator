@@ -1,4 +1,4 @@
-package de.unistuttgart.t2.computationsimulator.compute;
+package de.unistuttgart.t2.computation_simulator.compute;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
